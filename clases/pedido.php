@@ -2,11 +2,11 @@
 
 public class Pedido {
   //Atributos
-  $pedidoID;
-  $cliente;
-  $productos;
-  $totales;
-  $estado;
+  private $pedidoID;
+  private $cliente;
+  private $productos;
+  private $totales;
+  private $estado;
 
   //Metodos
   public function crearPedido($carrito, $comprador){

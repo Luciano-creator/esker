@@ -2,9 +2,9 @@
 public class Carrito {
   //Atributos
 
-  $carritoID;
-  $fechaCreacion;
-  $fechaModificacion;
+  private $carritoID;
+  private $fechaCreacion;
+  private $fechaModificacion;
 
   //Metodos
   public function agregarProducto($Producto)

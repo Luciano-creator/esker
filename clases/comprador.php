@@ -1,14 +1,14 @@
 <?php
 public class Comprador {
   //Atributos
-  $domicilio;
-  $telefono;
-  $codigoPostal;
-  $sexo;
-  $imagenPerfil;
-  $tarjetas;
-  $suscripcionNews;
-  $pedidos;
+  private $domicilio;
+  private $telefono;
+  private $codigoPostal;
+  private $sexo;
+  private $imagenPerfil;
+  private $tarjetas;
+  private $suscripcionNews;
+  private $pedidos;
 
   //Metodos
 

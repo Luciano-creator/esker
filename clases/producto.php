@@ -2,16 +2,16 @@
 public class Producto {
   //Atributos
   PRODUCTO
-  $ID;
-  $titulo;
-  $precio;
-  $categoriaID;
-  $descripcionCorta;
-  $descripcionLarga;
-  $descuento;
-  $color;
-  $talle;
-  $stock;
-  $fotos;
+  private $ID;
+  private $titulo;
+  private $precio;
+  private $categoriaID;
+  private $descripcionCorta;
+  private $descripcionLarga;
+  private $descuento;
+  private $color;
+  private $talle;
+  private $stock;
+  private $fotos;
   //Metodos
 } ?>

@@ -2,9 +2,9 @@
 
 public class Categoria {
   //Atributos
-  $nombre;
-  $categoriaID;
-  $productos;
+  private $nombre;
+  private $categoriaID;
+  private $productos;
 
   //Metodos
   public function mostrarProductos(){

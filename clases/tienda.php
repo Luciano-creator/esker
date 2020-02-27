@@ -1,9 +1,9 @@
 <?php
 public class Tienda {
   //Atributos
-  $nombre;
-  $URL;
-  $productos;
-  $clientes;
-  //Metodos 
+  private $nombre;
+  private $URL;
+  private $productos;
+  private $clientes;
+  //Metodos
 } ?>
