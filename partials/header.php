@@ -5,13 +5,13 @@
     <div class="social-media">
       <ul class="">
         <li class="">
-          <a class="" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
         </li>
         <li class="">
-          <a class="" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
         </li>
         <li class="">
-          <a class="" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
         </li>
       </ul>
     </div>
