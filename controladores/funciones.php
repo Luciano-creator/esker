@@ -52,6 +52,19 @@ function validarRegistracion($unArray) {
             $errores['repassword'] = "Tenés que ingresar la misma contraseña";
         }
     }
+    if ($_FILES) {
+      if ($_FILES["img"]["error"] != 0) {
+        $errores['imagen'] = "Hubo un error al cargar la imagen <br>";
+      }
+      else{
+        $ext = pathinfo($_FILES["img"]["name"],PATHINFO_EXTENSION);
+
+        if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
+          $errores['imagen'] = "La imagen debe ser jpg, jpeg o png <br>";
+        }
+      }
+
+    }
 
     return $errores;
 }
@@ -76,5 +89,19 @@ function abrirBBDD($unArchivo) {
     array_pop($explodeDeUsuarios);
     return $explodeDeUsuarios;
 }
+function sessionCheck(){
+    if (isset ($_SESSION['nombre'])){
 
+        return true;
+
+    }
+}
+function logOut(){
+  session_start();
+  session_destroy();
+  setcookie("PHPSESSID", "", time() - 6400);
+  setcookie('userEmail', null, time() - 1);
+  setcookie('userPass', null, time() - 1);
+  header("Location: index.php");
+}
 ?>

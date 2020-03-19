@@ -31,21 +31,29 @@
       </div>
 
       <div class="usuario">
-        <ul>
-          <li>
-            <a href="login.php">
-              <span>Login</span>
-            </a>
-          </li>
-          <li>
-            <span class="divisor"> / </span>
-          </li>
-          <li>
-            <a href="registro.php">
-              <span>Registrarse</span>
-            </a>
-          </li>
-        </ul>
+        <?php if (sessionCheck()): ?>
+          <ul>
+            <li>
+              <a href="perfil.php"><?=$_SESSION['nombre']?></a>
+            </li>
+          </ul>
+        <?php else: ?>
+          <ul>
+            <li>
+              <a href="login.php">
+                <span>Login</span>
+              </a>
+            </li>
+            <li>
+              <span class="divisor"> / </span>
+            </li>
+            <li>
+              <a href="registro.php">
+                <span>Registrarse</span>
+              </a>
+            </li>
+          </ul>
+        <?php endif; ?>
       </div>
     </div>
   </div>
