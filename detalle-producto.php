@@ -34,7 +34,7 @@ require_once 'controladores/funciones.php';
     <div class="detalle">
       <div class="container">
         <div class="detalle-producto">
-          <a href="#" class="volver"><i class="fas fa-undo"></i> Volver a productos</a>
+          <a href="productos.php" class="volver"><i class="fas fa-undo"></i> Volver a productos</a>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>

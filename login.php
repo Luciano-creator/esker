@@ -24,7 +24,7 @@ if($_POST) {
                     }
                     header('Location: bienvenido.php');
                     exit;
-                }
+                } else $arrayDeErrores['password'] = "La contraseña no es correcta";
             }
         }
     }
